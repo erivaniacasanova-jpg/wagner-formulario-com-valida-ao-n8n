@@ -12,7 +12,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { useToast } from "@/hooks/use-toast"
 import ErrorModal from "@/components/error-modal"
 
-const DEFAULT_REFERRAL_ID = "110956" // Francisco Eliedisom Dos Santos
+const DEFAULT_REFERRAL_ID = "88389" // Wagner Cruz Vieira
 
 const BRAZILIAN_STATES = [
   { value: "AC", label: "Acre" },
