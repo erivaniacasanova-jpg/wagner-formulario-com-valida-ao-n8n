@@ -559,7 +559,7 @@ export default function RegistrationForm({ representante }: RegistrationFormProp
       } else if (formData.typeFrete === 'semFrete') {
         formaEnvio = 'Retirar na Associação'
       } else if (formData.typeFrete === 'eSim') {
-        formaEnvio = 'e-SIM'
+        formaEnvio = 'eSim'
       }
 
       const webhookData = {
@@ -571,7 +571,7 @@ export default function RegistrationForm({ representante }: RegistrationFormProp
         telefone_fixo: "",
         plano: planName,
         plan_id: formData.plan_id,
-        tipo_chip: formData.typeChip === 'fisico' ? 'Físico' : 'e-SIM',
+        tipo_chip: formData.typeChip === 'fisico' ? 'Físico' : 'eSim',
         forma_envio: formaEnvio,
         cep: formData.cep,
         endereco: formData.street,
@@ -820,7 +820,7 @@ export default function RegistrationForm({ representante }: RegistrationFormProp
                   <div className="flex items-center space-x-2">
                     <RadioGroupItem value="eSim" id="eSim-chip" disabled={!isFieldUnlocked("typeChip")} />
                     <Label htmlFor="eSim-chip" className="font-normal cursor-pointer">
-                      e-SIM
+                      eSim
                     </Label>
                   </div>
                 </RadioGroup>
@@ -1152,7 +1152,7 @@ export default function RegistrationForm({ representante }: RegistrationFormProp
                   <div className="flex items-center space-x-2">
                     <RadioGroupItem value="eSim" id="eSim" disabled={!isFieldUnlocked("typeFrete")} />
                     <Label htmlFor="eSim" className="font-normal cursor-pointer">
-                      Sem a necessidade de envio (e-SIM)
+                      Sem a necessidade de envio (eSim)
                     </Label>
                   </div>
                 )}
