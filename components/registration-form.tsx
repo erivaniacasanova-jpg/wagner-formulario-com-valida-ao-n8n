@@ -571,7 +571,7 @@ export default function RegistrationForm({ representante }: RegistrationFormProp
         telefone_fixo: "",
         plano: planName,
         plan_id: formData.plan_id,
-        tipo_chip: formData.typeChip === 'fisico' ? 'Físico' : 'eSim',
+        tipo_chip: formData.typeChip,
         forma_envio: formaEnvio,
         cep: formData.cep,
         endereco: formData.street,
