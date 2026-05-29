@@ -43,6 +43,11 @@ export default async function RepresentantePage({ params }: { params: Promise<{ 
       id: "159726",
       nome: " Jordeides Silva Pereira",
       whatsapp: "556993397859",
+      },
+    "160064": {
+      id: "160064",
+      nome: " Richard Feijo Da Silva",
+      whatsapp: "556993397859",
     },
      "119294": {
       id: "119294",
