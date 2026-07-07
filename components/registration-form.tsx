@@ -46,10 +46,9 @@ const BRAZILIAN_STATES = [
 
 const PLANS = {
   TIM: [
-    { id: "56", name: "100GB COM LIGACAO", price: 69.9, esim: true },
-    { id: "154", name: "200GB SEM LIGAÇÃO", price: 159.9, esim: true },
-    { id: "155", name: "300GB SEM LIGAÇÃO", price: 199.9, esim: true },
-  ],
+  { id: "56", name: "100GB COM LIGACAO", price: 69.9, esim: true },
+  { id: "154", name: "500GB SEM LIGAÇÃO", price: 189.9, esim: true },
+],
   CLARO: [
     { id: "57", name: "80GB COM LIGACAO", price: 69.9, esim: true },
     { id: "183", name: "150GB COM LIGACAO", price: 99.9, esim: true },
