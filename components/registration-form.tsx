@@ -53,6 +53,7 @@ const PLANS = {
     { id: "57", name: "80GB COM LIGACAO", price: 69.9, esim: true },
     { id: "183", name: "150GB COM LIGACAO", price: 99.9, esim: true },
   ],
+}
 
 interface Representante {
   id: string
@@ -848,12 +849,6 @@ export default function RegistrationForm({ representante }: RegistrationFormProp
                       </SelectItem>
                     ))}
 
-                    <div className="px-2 py-1.5 text-sm font-semibold mt-2 pointer-events-none" style={{ color: '#9932CC' }}>VIVO</div>
-                    {PLANS.VIVO.map((plan) => (
-                      <SelectItem key={plan.id} value={plan.id} className="text-gray-900 font-medium">
-                        {plan.name} - R$ {plan.price.toFixed(2).replace('.', ',')}
-                      </SelectItem>
-                    ))}
                   </SelectContent>
                 </Select>
               </div>
