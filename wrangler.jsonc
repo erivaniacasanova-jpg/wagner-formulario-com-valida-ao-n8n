@@ -2,13 +2,15 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "wagner-formulario-com-valida-ao-n8n",
   "compatibility_date": "2026-11-17",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "main": ".open-next/worker.js",
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
   "observability": {
     "enabled": true
-  },
-  "services": [
-    {
-      "binding": "WORKER_SELF_REFERENCE",
-      "service": "wagner-formulario-com-valida-ao-n8n"
-    }
-  ]
+  }
 }
